@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intuitive Systems Novesia</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Source Sans Pro', 'systems-ui', 'Inter', sans-serif;
+      font-size: 3rem;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    .container {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .ins-hello {
+      width: 25ch;
+      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      font-family: monospace;
+      font-size: 3em;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="ins-hello">
+      Intuitive Systems Novesia
+    </h1>
+</div>
+</body>
+
+</html>
