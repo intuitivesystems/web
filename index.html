@@ -6,51 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intuitive Systems Novesia</title>
   <style>
-    :root {
-      --ins-title-length: 25;
-      --ins-title-borderwidth-subtracted: calc(var(--ins-title-length) - 1.5);
-    }
-
     body {
-      background-color: #f0f0f0;
-      margin: 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      height: 100vh;
+      height: 95vh;
+      align-items: center;
+      margin: 0;
     }
 
-    h1 {
-      font-family: 'Source Sans Pro', 'systems-ui', 'Inter', sans-serif;
-      font-size: 4vw;
-      font-weight: 300;
-      font-style: normal;
-      width: calc(100vw - var(--ins-title-borderwidth-subtracted) * 1ch);
-      animation: typing 2s steps(var(--ins-title-length)), blink .5s step-end infinite alternate;
+    .ins h1 {
+      font-family: 'Source Sans Pro', 'systems-ui', 'Inter', monospace, sans-serif;
+      border-right: 2px solid;
       white-space: nowrap;
       overflow: hidden;
-      border-right: 2px solid;
+      font-size: 3vh;
       margin: 0 auto;
+      letter-spacing: .1em;
+      animation:
+        typing 3.5s steps(40, end),
+        blink .75s step-end infinite;
     }
+
 
     @keyframes typing {
       from {
         width: 0
       }
+
+      to {
+        width: 100%
+      }
     }
 
     @keyframes blink {
-      50% {
+
+      from,
+      to {
         border-color: transparent
+      }
+
+      50% {
+        border-color: inherit;
       }
     }
   </style>
 </head>
 
 <body>
-  <h1>
-    Intuitive Systems Novesia
-  </h1>
+  <div class="ins">
+    <h1>Intuitive Systems Novesia</h1>
+  </div>
 </body>
 
 </html>
